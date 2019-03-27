@@ -50,6 +50,9 @@ function viewCart(){
   var str = "In your cart, you have "
   for(var i = 0; i < cart.length; i++){
     var newStr = `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`
+    if(cart.length === 1){
+      return str + newStr
+    }
     if(i === cart.length - 1){
       newStr = `, and ${newStr}.`
     }
