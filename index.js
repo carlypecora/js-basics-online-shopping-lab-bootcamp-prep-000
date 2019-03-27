@@ -55,7 +55,7 @@ function viewCart(){
     }
     if(i === cart.length - 1){
       newStr = `, and ${newStr}.`
-    } else if(i < cart.length - 1){
+    } else if(i < cart.length - 1 && i > 0){
       newStr = `, ${newStr}`
     }
     str = str + newStr
