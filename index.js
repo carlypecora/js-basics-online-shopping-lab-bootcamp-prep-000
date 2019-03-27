@@ -53,6 +53,7 @@ function viewCart(){
     if(cart.length === 1){
       return str + newStr + "."
     }
+    newStr += `, ${newStr}`
     if(i === cart.length - 1){
       newStr = `, and ${newStr}.`
     }
