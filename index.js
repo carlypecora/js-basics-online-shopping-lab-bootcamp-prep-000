@@ -59,4 +59,7 @@ function placeOrder(cardNumber) {
   if(!cardNumber){
     return "Sorry, we don't have a credit card on file for you."
   }
+  cart = []
+  var total = total();
+  return total
 }
