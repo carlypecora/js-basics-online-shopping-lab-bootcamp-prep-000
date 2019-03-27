@@ -68,8 +68,7 @@ function viewCart(){
 function total() {
   var counter = 0
   for(var i = 0; i < cart.length; i++){
-    for(var key in cart[i])
-    counter += cart[i][key]
+    
   }
   return counter
 }
