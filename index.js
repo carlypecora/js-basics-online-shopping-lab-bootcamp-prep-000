@@ -78,6 +78,7 @@ function removeFromCart(item) {
     return
   }
   for(var i = 0; i < cart.length; i++){
+    console.log(cart[i])
     if(cart[i]["itemName"] === item){
       delete cart[i]
       return cart
