@@ -9,12 +9,6 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
-  var price = Math.floor(Math.random() * 100)
-  cart.push({["itemName"]: item, ["itemPrice"]: price})
-  return `${item} has been added to your cart.`
-}
-
 function viewCart(){
   if(cart.length === 0){
     return "Your shopping cart is empty."
@@ -59,7 +53,5 @@ function placeOrder(cardNumber) {
   if(!cardNumber){
     return "Sorry, we don't have a credit card on file for you."
   }
-  cart = []
-  var total = total();
-  return total
+  return total();
 }
