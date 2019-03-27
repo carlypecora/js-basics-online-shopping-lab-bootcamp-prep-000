@@ -44,6 +44,9 @@ function addToCart(item) {
 // console.log(viewCart())
 
 function viewCart(){
+  if(cart.length === 0){
+    return "Your shopping cart is empty"
+  }
   var str = "In your cart, you have "
   for(var i = 0; i < cart.length; i++){
     var newStr = `${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`
